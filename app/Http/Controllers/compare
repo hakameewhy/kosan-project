@@ -1,0 +1,53 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\User; // Pastikan User model sudah dibuat
+
+class LoginController extends Controller
+{
+    // Menampilkan halaman welcome
+    public function index()
+    {
+        return view('welcome');
+    }
+
+    // Fungsi login
+    public function login(Request $request)
+    {
+        $request->validate([
+            'username' => 'required',
+            'password' => 'required',
+        ]);
+
+        // Mencari pengguna berdasarkan username
+        $user = User::where('username', $request->username)->first();
+
+        if ($user && password_verify($request->password, $user->password)) {
+            return redirect()->route('welcome')->with('success', 'Login berhasil!');
+        } else {
+            return redirect()->route('welcome')->with('error', 'Username atau password salah.');
+        }
+    }
+
+    // Fungsi register
+    public function register(Request $request)
+    {
+        $request->validate([
+            'username' => 'required|unique:users,username',
+            'password' => 'required|min:6',
+            'email' => 'required|email|unique:users,email',
+        ]);
+
+        // Membuat pengguna baru
+        User::create([
+            'username' => $request->username,
+            'password' => bcrypt($request->password), // Enkripsi password
+            'email' => $request->email,
+            'role' => 'member', // Default role adalah member
+        ]);
+
+        return redirect()->route('welcome')->with('success', 'Registrasi berhasil! Silakan login.');
+    }
+}
