@@ -84,208 +84,89 @@
 
     <!-- Main content -->
     <main class="container mx-auto mt-8 px-6">
-        <p class="text-gray-500 text-sm">
-            Last Updated on 2 December 2024 12:50 (UTC +7)
-        </p>
-        <h1 class="text-2xl font-semibold mt-2">
-            Book and get the best AirAsia flight deals
-        </h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="text-lg font-semibold">
-                    Kota Kinabalu (BKI) → Kuching (KCH)
-                </h2>
-                <p class="text-gray-600">
-                    Thu, 5 Dec · Direct
-                </p>
-                <div class="flex items-center mt-4">
-                    <img alt="AirAsia Logo" class="h-10" height="40"
-                        src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg"
-                        width="40" />
-                    <span class="ml-2 text-gray-600">
-                        AirAsia
-                    </span>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                    <div>
-                        <p class="text-gray-500 text-sm">
-                            Start from
-                        </p>
-                        <p class="text-red-500 text-xl font-semibold">
-                            Rp 411.654
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            Price/ Pax
-                        </p>
-                    </div>
-                    <button class="bg-red-500 text-white px-4 py-2 rounded">
-                        Select
-                    </button>
-                </div>
+    <!-- Menampilkan waktu Last Updated -->
+    <p id="lastUpdated" class="text-gray-500 text-sm"></p>
+
+    <h1 class="text-2xl font-semibold mt-2">
+        Book and get the best Room With RIS
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <!-- Flight 1 -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-lg font-semibold">Kota Kinabalu (BKI) → Kuching (KCH)</h2>
+            <p class="text-gray-600">Thu, 5 Dec · Direct</p>
+            <div class="flex items-center mt-4">
+                <img alt="AirAsia Logo" class="h-10"
+                    src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg" />
+                <span class="ml-2 text-gray-600">AirAsia</span>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="text-lg font-semibold">
-                    Sibu (SBW) → Kuala Lumpur (KUL)
-                </h2>
-                <p class="text-gray-600">
-                    Thu, 5 Dec · Direct
-                </p>
-                <div class="flex items-center mt-4">
-                    <img alt="AirAsia Logo" class="h-10" height="40"
-                        src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg"
-                        width="40" />
-                    <span class="ml-2 text-gray-600">
-                        AirAsia
-                    </span>
+            <div class="flex justify-between items-center mt-4">
+                <div>
+                    <p class="text-gray-500 text-sm">Start from</p>
+                    <p class="text-red-500 text-xl font-semibold">Rp 411.654</p>
+                    <p class="text-gray-500 text-sm">Price/ Pax</p>
                 </div>
-                <div class="flex justify-between items-center mt-4">
-                    <div>
-                        <p class="text-gray-500 text-sm">
-                            Start from
-                        </p>
-                        <p class="text-red-500 text-xl font-semibold">
-                            Rp 411.654
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            Price/ Pax
-                        </p>
-                    </div>
-                    <button class="bg-red-500 text-white px-4 py-2 rounded">
-                        Select
-                    </button>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="text-lg font-semibold">
-                    Thiruvananthapuram (TRV) → Kuala Lumpur (KUL)
-                </h2>
-                <p class="text-gray-600">
-                    Tue, 14 Jan · Direct
-                </p>
-                <div class="flex items-center mt-4">
-                    <img alt="AirAsia Logo" class="h-10" height="40"
-                        src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg"
-                        width="40" />
-                    <span class="ml-2 text-gray-600">
-                        AirAsia
-                    </span>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                    <div>
-                        <p class="text-gray-500 text-sm">
-                            Start from
-                        </p>
-                        <p class="text-red-500 text-xl font-semibold">
-                            Rp 1.488.521
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            Price/ Pax
-                        </p>
-                    </div>
-                    <button class="bg-red-500 text-white px-4 py-2 rounded">
-                        Select
-                    </button>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="text-lg font-semibold">
-                    Ho Chi Minh City (SGN) → Penang George Town (PEN)
-                </h2>
-                <p class="text-gray-600">
-                    Mon, 6 Jan · Direct
-                </p>
-                <div class="flex items-center mt-4">
-                    <img alt="AirAsia Logo" class="h-10" height="40"
-                        src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg"
-                        width="40" />
-                    <span class="ml-2 text-gray-600">
-                        AirAsia
-                    </span>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                    <div>
-                        <p class="text-gray-500 text-sm">
-                            Start from
-                        </p>
-                        <p class="text-red-500 text-xl font-semibold">
-                            Rp 878.674
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            Price/ Pax
-                        </p>
-                    </div>
-                    <button class="bg-red-500 text-white px-4 py-2 rounded">
-                        Select
-                    </button>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="text-lg font-semibold">
-                    Kuala Lumpur (KUL) → Bali Denpasar (DPS)
-                </h2>
-                <p class="text-gray-600">
-                    Thu, 5 Dec · Direct
-                </p>
-                <div class="flex items-center mt-4">
-                    <img alt="AirAsia Logo" class="h-10" height="40"
-                        src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg"
-                        width="40" />
-                    <span class="ml-2 text-gray-600">
-                        AirAsia
-                    </span>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                    <div>
-                        <p class="text-gray-500 text-sm">
-                            Start from
-                        </p>
-                        <p class="text-red-500 text-xl font-semibold">
-                            Rp 706.847
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            Price/ Pax
-                        </p>
-                    </div>
-                    <button class="bg-red-500 text-white px-4 py-2 rounded">
-                        Select
-                    </button>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="text-lg font-semibold">
-                    Phuket (HKT) → Kuala Lumpur (KUL)
-                </h2>
-                <p class="text-gray-600">
-                    Thu, 5 Dec · Direct
-                </p>
-                <div class="flex items-center mt-4">
-                    <img alt="AirAsia Logo" class="h-10" height="40"
-                        src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg"
-                        width="40" />
-                    <span class="ml-2 text-gray-600">
-                        AirAsia
-                    </span>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                    <div>
-                        <p class="text-gray-500 text-sm">
-                            Start from
-                        </p>
-                        <p class="text-red-500 text-xl font-semibold">
-                            Rp 623.151
-                        </p>
-                        <p class="text-gray-500 text-sm">
-                            Price/ Pax
-                        </p>
-                    </div>
-                    <button class="bg-red-500 text-white px-4 py-2 rounded">
-                        Select
-                    </button>
-                </div>
+                <button class="bg-red-500 text-white px-4 py-2 rounded">Select</button>
             </div>
         </div>
-    </main>
+
+        <!-- Flight 2 -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-lg font-semibold">Sibu (SBW) → Kuala Lumpur (KUL)</h2>
+            <p class="text-gray-600">Thu, 5 Dec · Direct</p>
+            <div class="flex items-center mt-4">
+                <img alt="AirAsia Logo" class="h-10"
+                    src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg" />
+                <span class="ml-2 text-gray-600">AirAsia</span>
+            </div>
+            <div class="flex justify-between items-center mt-4">
+                <div>
+                    <p class="text-gray-500 text-sm">Start from</p>
+                    <p class="text-red-500 text-xl font-semibold">Rp 411.654</p>
+                    <p class="text-gray-500 text-sm">Price/ Pax</p>
+                </div>
+                <button class="bg-red-500 text-white px-4 py-2 rounded">Select</button>
+            </div>
+        </div>
+
+        <!-- Flight 3 -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-lg font-semibold">Thiruvananthapuram (TRV) → Kuala Lumpur (KUL)</h2>
+            <p class="text-gray-600">Tue, 14 Jan · Direct</p>
+            <div class="flex items-center mt-4">
+                <img alt="AirAsia Logo" class="h-10"
+                    src="https://storage.googleapis.com/a1aa/image/De1KuMZSVyU6SqasEHHebBCxPxWpTogpfCYNGiy6D3UmCmtnA.jpg" />
+                <span class="ml-2 text-gray-600">AirAsia</span>
+            </div>
+            <div class="flex justify-between items-center mt-4">
+                <div>
+                    <p class="text-gray-500 text-sm">Start from</p>
+                    <p class="text-red-500 text-xl font-semibold">Rp 1.488.521</p>
+                    <p class="text-gray-500 text-sm">Price/ Pax</p>
+                </div>
+                <button class="bg-red-500 text-white px-4 py-2 rounded">Select</button>
+            </div>
+        </div>
+    </div>
+</main>
+    
     <script>
+        //script untuk format tanggal updated
+        function formatDate(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Jakarta' };
+        const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZone: 'Asia/Jakarta' };
+        const formattedDate = date.toLocaleDateString('en-US', options);
+        const formattedTime = date.toLocaleTimeString('en-US', timeOptions);
+        return `${formattedDate} ${formattedTime} (UTC +7)`;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const currentDate = new Date();
+        const lastUpdatedElement = document.getElementById('lastUpdated');
+        lastUpdatedElement.textContent = `Last Updated on ${formatDate(currentDate)}`;
+    });
+
     // JavaScript untuk menangani klik pada ikon profil
     const profileIcon = document.getElementById('profileIcon');
     const sidebar = document.getElementById('sidebar');

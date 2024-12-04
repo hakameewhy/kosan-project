@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\RoomsController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserProfileController;
+use App\Http\Controllers\HomeController;
+
 
 //Halaman utama (welcome)
 Route::get('/', function () {
@@ -39,3 +42,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/profile/save', [UserProfileController::class, 'store'])->name('profile.save');
 });
 Route::delete('/profile/delete-picture', [UserProfileController::class, 'deletePicture'])->name('profile.deletePicture');
+
+//tombol-tombol pada rooms
+Route::post('/rooms', [RoomsController::class, 'store'])->name('rooms.store');
+
+Route::get('/home/admin', [HomeController::class, 'index']);
